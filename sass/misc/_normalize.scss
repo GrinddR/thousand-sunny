@@ -1,0 +1,51 @@
+/*RESET CSS*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/*IMPORTS*/
+
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+/*GLOBALS*/
+
+html {
+    font-family: $font-primary;
+    color: black;
+  }
+  
+  body {
+    min-height: 100%;
+    background-image: radial-gradient(circle, #b0a8b9, #c3bdcb, #d6d3dc, #eae9ee, #ffffff);
+  }
+  
+  header{
+    background-image: linear-gradient(to right, #eb0b15, #f30047, #e6007c, #b800b6, #3712eb);
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+  }
+  
+  @media screen and (max-width: 425px) {
+    html {
+      font-size: 0.625rem;
+    }
+
+    iframe{
+      max-width: 288px;
+    }
+}
