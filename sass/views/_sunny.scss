@@ -1,0 +1,52 @@
+.container {
+    @include flex(column, space-evenly, flex-start, map-get($gap, small));
+
+    &-section {
+        @include flex(row, space-evenly, center, map-get($gap, small));
+        max-width: 1080px;
+
+        &_img {
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+
+        .sunny_img {
+            width: 45rem;
+            height: auto;
+        }
+    }
+}
+
+
+
+
+// @media (min-width: 325px){
+// .breakpoint_sunny-img  {
+// max-width: 100%;
+// display: inline-block;
+// }
+// }
+
+// @media (min-width: 420px) {
+// .breakpoint_sunny-img  {
+// max-width: 48%;
+// }
+// }
+
+@media screen and (max-width: 768px) {
+    .container-section {
+        max-width: 660px;
+        @include flex(column, space-evenly, flex-start, map-get($gap, small));
+        flex-wrap: wrap;
+
+        &-img {
+            max-width: 27.5rem;
+
+            .sunny-img {
+                max-width: 15rem;
+                height: auto;
+            }
+        }
+    }
+
+}

@@ -6,6 +6,6 @@ footer {
 }
 
 .footer {
-    justify-content: center;
+    @include flex(row, center, flex-start, map-get($gap, small));
     padding-top: 2rem;
 }

@@ -12,22 +12,25 @@
 
 /*IMPORTS*/
 
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 /*GLOBALS*/
 
 html {
     font-family: $font-primary;
-    color: black;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: .125rem;
   }
   
   body {
     min-height: 100%;
-    background-image: radial-gradient(circle, #b0a8b9, #c3bdcb, #d6d3dc, #eae9ee, #ffffff);
+    // background-image: radial-gradient(circle, #b0a8b9, #c3bdcb, #d6d3dc, #eae9ee, #ffffff);
+    background-image: url(../../assets/img/background-img2.jpg);
   }
   
   header{
-    background-image: linear-gradient(to right, #eb0b15, #f30047, #e6007c, #b800b6, #3712eb);
+    // background-image: linear-gradient(to right, #eb0b15, #f30047, #e6007c, #b800b6, #3712eb);
   }
   
   ul {
@@ -36,9 +39,10 @@ html {
   
   a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     display: inline-block;
   }
+
   
   @media screen and (max-width: 425px) {
     html {

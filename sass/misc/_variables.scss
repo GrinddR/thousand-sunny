@@ -1,7 +1,75 @@
 /*VARIABLES*/
 
-    $principal: #db0606;
+    $principal: #292626c4;
     $secondary: #f5f5f5;
-    $font-primary: "Amatic SC", cursive;
+    $font-primary: "Amatic SC", cursive; 
     $font-secondary: "Inter", sans-serif;
     $font-third: "Noto Serif Display", serif;
+
+/*EXTENDS*/
+
+%news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+  }    
+
+/*MAPS*/
+
+
+    $font:(
+        x-large:2rem,
+        large:1.625rem,
+        medium:1.125rem,
+        small:1rem,
+        x-small:0.6875rem,
+    );
+
+    @each $var, $val in $font {
+        .font-#{$var}{
+            font-size: #{$val};
+        }
+    }
+
+
+    $space:(
+        large:5rem,
+        medium:3rem,
+        small:1.5rem,
+    );
+
+    @each $var, $val in $space {
+        .sp-#{$var}{
+            gap: #{$val};
+        }
+    }
+
+    $pad:(
+        x-large:5rem,
+        large:3rem,
+        medium:1.5rem,
+        small:1rem,
+        x-small: .625rem,
+    );
+
+    @each $var, $val in $pad {
+        .pad-#{$var}{
+            padding: #{$val};
+        }
+    }
+
+    $gap:(
+        x-large:5rem,
+        large:3rem,
+        medium:1.5rem,
+        small:1rem,
+        x-small: .625rem,
+    );
+
+    @each $var, $val in $gap {
+        .gap-#{$var}{
+            gap: #{$val};
+        }
+    }
