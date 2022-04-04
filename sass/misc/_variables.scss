@@ -1,10 +1,16 @@
 /*VARIABLES*/
-    $principal: #EBD348;
-    $font-primary: "Amatic SC", cursive; 
-    $font-secondary: "Inter", sans-serif;
-    $font-third: "Noto Serif Display", serif;
-    $font-family-base: "Amatic SC", cursive;
- 
+$principal: #D03947;
+$secondary: #EBD348;
+$font-primary: "Amatic SC",
+cursive;
+$font-secondary: "Inter",
+sans-serif;
+$font-third: "Noto Serif Display",
+serif;
+$font-family-base: "Amatic SC",
+cursive;
+$font-size-base: bold ;
+
 /*EXTENDS*/
 
 %news-container {
@@ -13,62 +19,62 @@
     align-items: center;
     padding: 1rem;
     margin: 1rem;
-  }    
+}
 
 /*MAPS*/
 
 
-    $font:(
-        x-large:2rem,
-        large:1.625rem,
-        medium:1.125rem,
-        small:1rem,
-        x-small:0.6875rem,
-    );
+$font:(x-large:2rem,
+    large:1.625rem,
+    medium:1.125rem,
+    small:1rem,
+    x-small:0.6875rem,
+);
 
-    @each $var, $val in $font {
-        .font-#{$var}{
-            font-size: #{$val};
-        }
+@each $var,
+$val in $font {
+    .font-#{$var} {
+        font-size: #{$val};
     }
+}
 
 
-    $space:(
-        large:5rem,
-        medium:3rem,
-        small:1.5rem,
-    );
+$space:(large:5rem,
+    medium:3rem,
+    small:1.5rem,
+);
 
-    @each $var, $val in $space {
-        .sp-#{$var}{
-            gap: #{$val};
-        }
+@each $var,
+$val in $space {
+    .sp-#{$var} {
+        gap: #{$val};
     }
+}
 
-    $pad:(
-        x-large:5rem,
-        large:3rem,
-        medium:1.5rem,
-        small:1rem,
-        x-small: .625rem,
-    );
+$pad:(x-large:5rem,
+    large:3rem,
+    medium:1.5rem,
+    small:1rem,
+    x-small: .625rem,
+);
 
-    @each $var, $val in $pad {
-        .pad-#{$var}{
-            padding: #{$val};
-        }
+@each $var,
+$val in $pad {
+    .pad-#{$var} {
+        padding: #{$val};
     }
+}
 
-    $gap:(
-        x-large:5rem,
-        large:3rem,
-        medium:1.5rem,
-        small:1rem,
-        x-small: .625rem,
-    );
+$gap:(x-large:5rem,
+    large:3rem,
+    medium:1.5rem,
+    small:1rem,
+    x-small: .625rem,
+);
 
-    @each $var, $val in $gap {
-        .gap-#{$var}{
-            gap: #{$val};
-        }
+@each $var,
+$val in $gap {
+    .gap-#{$var} {
+        gap: #{$val};
     }
+}

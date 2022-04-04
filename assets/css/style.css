@@ -79,20 +79,20 @@
 /*GLOBALS*/
 html {
   font-family: "Amatic SC", cursive;
-  color: white;
+  color: #1A1B1D;
   font-weight: bold;
   letter-spacing: .125rem; }
 
 body {
   min-height: 100%;
-  background-image: url(../../assets/img/background-img2.jpg); }
+  background-color: #E4E5E7; }
 
 ul {
   list-style-type: none; }
 
 a {
   text-decoration: none;
-  color: white;
+  color: #1A1B1D;
   display: inline-block; }
 
 @media screen and (max-width: 425px) {
@@ -113,18 +113,20 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  background-color: #292626c4;
+  background-color: #D03947;
   max-width: 100vh;
   flex-wrap: wrap;
   padding: 0.5rem; }
   header .navbar {
     min-height: 10vh;
     padding: 1rem;
-    margin-bottom: 0.625rem; }
+    margin-bottom: 0.625rem;
+    position: relative; }
   header .logo {
     display: flex;
     flex-basis: 30%;
-    width: 20rem; }
+    width: 20rem;
+    left: 5rem; }
   header .menu {
     display: flex;
     flex-direction: row;
@@ -135,10 +137,10 @@ header {
     flex-wrap: wrap; }
     header .menu__item {
       border-radius: 0.5rem;
-      border: 2px solid #292626c4;
+      border: 2px solid #D03947;
       transition: all 0.3s ease-in-out; }
       header .menu__item:hover {
-        border-color: #f5f5f5; }
+        border-color: #EBD348; }
       header .menu__item .menu__link {
         font-size: 1rem;
         padding: 1rem;
@@ -153,7 +155,7 @@ header {
 
 /*FOOTER*/
 footer {
-  background-color: #292626c4;
+  background-color: #D03947;
   height: 10vh; }
 
 .footer {
@@ -177,8 +179,9 @@ footer {
     width: 100%;
     height: 100%; }
 
-.font-style {
-  font-family: var("Amatic SC", cursive) !important; }
+body {
+  font-family: "Amatic SC", cursive !important;
+  font-style: bold; }
 
 /*GRID*/
 .grid {
@@ -289,6 +292,13 @@ footer {
   text-align: center;
   align-items: center; }
 
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem; }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -303,10 +313,10 @@ footer {
     gap: 1rem;
     max-width: 1080px; }
     .container-section_img {
-      max-width: 60rem;
+      max-width: 40rem;
       margin: 0 auto; }
     .container-section .sunny_img {
-      width: 45rem;
+      width: 100%;
       height: auto; }
 
 @media screen and (max-width: 768px) {
@@ -319,7 +329,6 @@ footer {
     gap: 1rem;
     flex-wrap: wrap; }
     .container-section-img {
-      max-width: 27.5rem; }
+      max-width: 18rem; }
       .container-section-img .sunny-img {
-        max-width: 15rem;
-        height: auto; } }
+        max-width: 18rem; } }
