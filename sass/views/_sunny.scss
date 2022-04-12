@@ -1,12 +1,23 @@
-.reverse{
-    @include flex(row-reverse, space-evenly, center, map-get($gap, small));
-}
-
 .container {
-    @include flex(column, space-evenly, flex-start, map-get($gap, small));
+    @include flex(column, space-evenly, center, map-get($gap, small));
 
     &-section {
         @include flex(row, space-evenly, center, map-get($gap, small));
+        max-width: 1080px;
+
+        &_img {
+            max-width: 40rem;
+            margin: 0 auto;
+        }
+
+        .sunny_img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &-section_reverse {
+        @include flex(row-reverse, space-evenly, center, map-get($gap, small));
         max-width: 1080px;
 
         &_img {
@@ -36,5 +47,6 @@
             }
         }
     }
+
 
 }

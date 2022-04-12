@@ -126,7 +126,7 @@ header {
     display: flex;
     flex-basis: 30%;
     width: 20rem;
-    left: 5rem; }
+    justify-content: center; }
   header .menu {
     display: flex;
     flex-direction: row;
@@ -254,12 +254,22 @@ body {
     .grid-container__title {
       font-size: 1.5rem; } }
 
-@media screen and (max-width: 1280px) {
+.grid-nakamas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 1rem;
+  justify-content: center; }
+  .grid-nakamas .wanted_grid {
+    text-align: center;
+    align-items: center; }
+    .grid-nakamas .wanted_grid .wanted_img {
+      max-height: 20rem; }
+
+@media screen and (max-width: 1024px) {
   .grid-nakamas {
-    display: grid;
-    grid-auto-flow: column;
-    padding: 1rem;
-    justify-content: center; } }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr); } }
 
 @media screen and (max-width: 768px) {
   .grid-nakamas {
@@ -272,15 +282,6 @@ body {
     .grid-nakamas .wanted_img {
       max-width: 15rem; } }
 
-.grid-nakamas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  padding: 1rem;
-  justify-content: center; }
-  .grid-nakamas .wanted_img {
-    max-height: 30rem; }
-
 #esquinas_redondeadas {
   border-radius: 20px 10px 50px 30px;
   -webkit-border-radius: 20px 10px 50px 30px;
@@ -288,22 +289,11 @@ body {
   border: 10px double;
   justify-content: center; }
 
-.wanted_grid {
-  text-align: center;
-  align-items: center; }
-
-.reverse {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1rem; }
-
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem; }
   .container-section {
     display: flex;
@@ -316,6 +306,19 @@ body {
       max-width: 40rem;
       margin: 0 auto; }
     .container-section .sunny_img {
+      width: 100%;
+      height: auto; }
+  .container-section_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1080px; }
+    .container-section_reverse_img {
+      max-width: 40rem;
+      margin: 0 auto; }
+    .container-section_reverse .sunny_img {
       width: 100%;
       height: auto; }
 
