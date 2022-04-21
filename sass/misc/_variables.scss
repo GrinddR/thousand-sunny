@@ -1,14 +1,12 @@
 /*VARIABLES*/
 $principal: #D03947;
 $secondary: #EBD348;
-$font-primary: "Amatic SC",
-cursive;
-$font-secondary: "Inter",
-sans-serif;
+$third: #527ED7;
+$font-primary: 'Amatic SC', cursive;
+$font-secondary: 'Roboto', sans-serif;
 $font-third: "Noto Serif Display",
 serif;
-$font-family-base: "Amatic SC",
-cursive;
+$font-family-base: 'Dela Gothic One', cursive;
 $font-size-base: bold ;
 
 /*EXTENDS*/
@@ -25,7 +23,7 @@ $font-size-base: bold ;
 
 
 $font:(x-large:2rem,
-    large:1.625rem,
+    large:1.5rem,
     medium:1.125rem,
     small:1rem,
     x-small:0.6875rem,

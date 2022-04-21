@@ -4,10 +4,14 @@
     &-section {
         @include flex(row, space-evenly, center, map-get($gap, small));
         max-width: 1080px;
+        border: 2px solid black;
+        border-radius: 8px;
+        background-image: url(../../assets/img/2222836.jpg);
 
         &_img {
             max-width: 40rem;
             margin: 0 auto;
+        
         }
 
         .sunny_img {
@@ -19,6 +23,10 @@
     &-section_reverse {
         @include flex(row-reverse, space-evenly, center, map-get($gap, small));
         max-width: 1080px;
+        color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        background-image: url(../../assets/img/sunnyfondo.jpg);
 
         &_img {
             max-width: 40rem;

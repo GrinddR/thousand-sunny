@@ -12,7 +12,7 @@
 
 /*IMPORTS*/
 
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@700&display=swap');
 
 /*VARIABLES*/
 
@@ -27,7 +27,7 @@
 /*GLOBALS*/
 
 html {
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
   color: black;
 }
 
