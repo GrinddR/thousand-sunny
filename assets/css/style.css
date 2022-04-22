@@ -252,6 +252,10 @@ footer {
   .section_intro_img {
     max-width: 50rem; }
 
+@media screen and (max-width: 1024px) {
+  .section_intro_img {
+    max-width: 20rem; } }
+
 body {
   font-family: "Dela Gothic One", cursive !important;
   font-style: bold; }
